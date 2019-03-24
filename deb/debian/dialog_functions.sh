@@ -39,24 +39,24 @@ find_session()
 	DE=gnome;
 	DIALOG=`which zenity`;
 	DIALOG_TYPE=zenity;
-        SU=`which gksu`
-	SU_TYPE=gksu
+        SU=`which lxsu`
+	SU_TYPE=lxsu
     elif xprop -root _DT_SAVE_MODE | grep ' = \"xfce4\"$' >/dev/null 2>&1; then
 	DE=xfce;
 	DIALOG=`which zenity`;
 	DIALOG_TYPE=zenity;
-        SU=`which gksu`
-	SU_TYPE=gksu
+        SU=`which lxsu`
+	SU_TYPE=lxsu
     fi
 }
 
 find_su()
 {
         if [ -z "$SU" ] ; then
-                SU=`which gksu`
+                SU=`which lxsu`
 
                 if [ -z "$SU_TYPE" ]; then
-                        SU_TYPE=gksu
+                        SU_TYPE=lxsu
                 fi
         fi
 
