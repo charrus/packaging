@@ -22,7 +22,7 @@ EPOCH:=$(shell dpkg-parsechangelog | sed '/^Version/!d; s/.* //; s/:.*//;')
 
 TODAY=$(shell date +%Y%m%d)
 
-MAIN_GIT_URL=git://github.com/MythTV/mythtv.git
+MAIN_GIT_URL=git://github.com/charrus/mythtv.git
 MYTHWEB_GIT_URL=git://github.com/MythTV/mythweb.git
 MYTHBUNTU_THEME_GIT_URL=git://github.com/MythTV-Themes/Mythbuntu.git
 
