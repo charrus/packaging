@@ -6,7 +6,7 @@ Uploaders: Mario Limonciello <superm1@ubuntu.com>,
            Andres Mejia <amejia@debian.org>,
 Homepage: http://www.mythtv.org
 Standards-Version: 3.9.4
-Vcs-Git: git://github.com/MythTV/packaging.git
+Vcs-Git: git://github.com/charrus/packaging.git
 Build-Conflicts: libqt3-mt-dev
 Build-Depends:  debhelper (>= 9),
                 quilt,
