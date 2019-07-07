@@ -10,7 +10,7 @@ include debian/mythtv.make
 buildroot       := debian/tmp
 
 # Set this to yes for releases
-MYTHTV_RELEASE ?= no
+MYTHTV_RELEASE ?= yes
 ifeq (yes,$(MYTHTV_RELEASE))
 MYTHTV_COMPILE_TYPE = release
 else
@@ -46,7 +46,8 @@ MYTHTV_CONFIGURE_OPTS +=    --compile-type=$(MYTHTV_COMPILE_TYPE) \
 				--enable-sdl \
 				--enable-libmp3lame \
 				--enable-libx264 \
-				--enable-vdpau
+				--enable-vdpau \
+				--disable-xnvctrl
 
 #                                    #
 # Architecture dependent build flags #
